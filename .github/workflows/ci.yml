@@ -25,7 +25,8 @@ jobs:
         run: dotnet build --no-restore
 
       - name: Check code formatting (linter)
-        run: dotnet format ToDoDeployment.sln --verify-no-changes --verbosity diagnostic
+        run: dotnet format todo.csproj --verify-no-changes --verbosity diagnostic
+
 
       - name: Run tests
         run: dotnet test --no-build --verbosity normal
