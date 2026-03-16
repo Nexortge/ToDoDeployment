@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hKssOk3kcdw=",
+  "dgSpecHash": "5LWG+ny14sI=",
   "success": true,
-  "projectFilePath": "c:\\Users\\nexor\\OneDrive\\Documenten\\School\\School\\todo\\todo.Tests\\todo.Tests.csproj",
+  "projectFilePath": "C:\\Users\\nexor\\OneDrive\\Documenten\\School\\School\\todo\\todo.Tests\\todo.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nexor\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\nexor\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

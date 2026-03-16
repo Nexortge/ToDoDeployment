@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\nexor\\OneDrive\\Documenten\\School\\School\\todo\\todo.csproj": {}
+    "C:\\Users\\nexor\\OneDrive\\Documenten\\School\\School\\todo\\todo.csproj": {}
   },
   "projects": {
-    "c:\\Users\\nexor\\OneDrive\\Documenten\\School\\School\\todo\\todo.csproj": {
+    "C:\\Users\\nexor\\OneDrive\\Documenten\\School\\School\\todo\\todo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nexor\\OneDrive\\Documenten\\School\\School\\todo\\todo.csproj",
+        "projectUniqueName": "C:\\Users\\nexor\\OneDrive\\Documenten\\School\\School\\todo\\todo.csproj",
         "projectName": "todo",
-        "projectPath": "c:\\Users\\nexor\\OneDrive\\Documenten\\School\\School\\todo\\todo.csproj",
+        "projectPath": "C:\\Users\\nexor\\OneDrive\\Documenten\\School\\School\\todo\\todo.csproj",
         "packagesPath": "C:\\Users\\nexor\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nexor\\OneDrive\\Documenten\\School\\School\\todo\\obj\\",
+        "outputPath": "C:\\Users\\nexor\\OneDrive\\Documenten\\School\\School\\todo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nexor\\AppData\\Roaming\\NuGet\\NuGet.Config"
