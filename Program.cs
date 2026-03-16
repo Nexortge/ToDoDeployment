@@ -11,7 +11,22 @@ builder.Services.AddOpenApi();
 builder.Services.AddDbContext<TodoContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
+
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders.XForwardedFor | Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders.XForwardedProto
+});
 
 // Configure the HTTP request pipeline.
 app.MapOpenApi();
@@ -19,6 +34,8 @@ app.UseSwaggerUi(options =>
 {
     options.DocumentPath = "/openapi/v1.json";
 });
+
+app.UseCors();
 
 // Automatically apply migrations at startup
 using (var scope = app.Services.CreateScope())
