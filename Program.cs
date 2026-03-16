@@ -14,16 +14,29 @@ builder.Services.AddDbContext<TodoContext>(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+app.MapOpenApi();
+app.UseSwaggerUi(options =>
 {
-    app.MapOpenApi();
-    app.UseSwaggerUi(options =>
+    options.DocumentPath = "/openapi/v1.json";
+});
+
+// Automatically apply migrations at startup
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
     {
-        options.DocumentPath = "/openapi/v1.json";
-    });
+        var context = services.GetRequiredService<TodoContext>();
+        context.Database.Migrate();
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An error occurred while migrating the database.");
+    }
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection(); // Commented out for Render deployment to avoid redirect issues
 
 app.MapControllers();
 
