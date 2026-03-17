@@ -308,3 +308,4 @@ c:\Users\nexor\OneDrive\Documenten\School\School\todo\bin\Debug\net10.0\todo.dll
 c:\Users\nexor\OneDrive\Documenten\School\School\todo\bin\Debug\net10.0\todo.pdb
 c:\Users\nexor\OneDrive\Documenten\School\School\todo\obj\Debug\net10.0\todo.genruntimeconfig.cache
 c:\Users\nexor\OneDrive\Documenten\School\School\todo\obj\Debug\net10.0\ref\todo.dll
+C:\Users\nexor\OneDrive\Documenten\School\School\todo\obj\Debug\net10.0\todo.sourcelink.json

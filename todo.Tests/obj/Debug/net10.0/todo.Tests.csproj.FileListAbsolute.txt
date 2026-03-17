@@ -393,3 +393,4 @@ c:\Users\nexor\OneDrive\Documenten\School\School\todo\todo.Tests\obj\Debug\net10
 c:\Users\nexor\OneDrive\Documenten\School\School\todo\todo.Tests\obj\Debug\net10.0\todo.Tests.pdb
 c:\Users\nexor\OneDrive\Documenten\School\School\todo\todo.Tests\obj\Debug\net10.0\todo.Tests.genruntimeconfig.cache
 c:\Users\nexor\OneDrive\Documenten\School\School\todo\todo.Tests\obj\Debug\net10.0\ref\todo.Tests.dll
+C:\Users\nexor\OneDrive\Documenten\School\School\todo\todo.Tests\obj\Debug\net10.0\todo.Tests.sourcelink.json

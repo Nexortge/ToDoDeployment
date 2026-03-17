@@ -18,9 +18,14 @@ namespace todo.Controllers
 
         // GET: api/todo
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get([FromQuery] int? userId = null)
         {
-            var todos = _context.ToDos.ToList();
+            IQueryable<ToDo> query = _context.ToDos;
+            if (userId.HasValue)
+            {
+                query = query.Where(t => t.UserId == userId);
+            }
+            var todos = query.ToList();
             return Ok(todos);
         }
 
@@ -53,6 +58,7 @@ namespace todo.Controllers
 
             existing.Title = todo.Title;
             existing.IsCompleted = todo.IsCompleted;
+            existing.UserId = todo.UserId;
             _context.SaveChanges();
             return NoContent();
         }
