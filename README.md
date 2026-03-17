@@ -46,3 +46,34 @@ Om dezelfde tests te draaien die in de GitHub CI draaien:
 ```bash
 dotnet test
 ```
+
+## AVG & Auteursrechten
+
+### Gegevensverwerking
+
+De volgende gegevens worden opgeslagen:
+
+Users:
+- Naam
+
+ToDo:
+- Titel van de to-do
+
+Deze gegevens kunnen verwijderd worden via de API. Individuele todos worden direct verwijderd uit de database. Wanneer een user verwijderd wordt, blijven de bijbehorende todos bestaan in de database, maar de koppeling met de user wordt verwijderd (UserId wordt `null`).
+
+### Beveiligingsmaatregelen
+
+De API is beveiligd door middel van HTTPS. Ik gebruik geen API key of andere beveiligingsmaatregelen omdat het project niet voor productie gebruikt wordt. Het is een schoolproject.
+
+### Licentie overzicht
+
+| Package | Licentie |
+|---|---|
+| .NET 10 (C# 13) | MIT |
+| Entity Framework Core | MIT |
+| Microsoft.EntityFrameworkCore.Sqlite | MIT |
+| Microsoft.EntityFrameworkCore.SqlServer | MIT |
+| NSwag.AspNetCore | MIT |
+| Microsoft.AspNetCore.OpenApi | MIT |
+
+Een MIT licentie is een permissieve open-source licentie die toestaat dat software vrij gebruikt, gewijzigd en verspreid wordt, zolang de originele auteursrechtvermelding en licentietekst behouden blijven.
